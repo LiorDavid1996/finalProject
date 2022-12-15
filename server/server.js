@@ -10,6 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use('/user',UserRouter)
+const development=1
 
 const PORT = process.env.PORT 
 app.listen(PORT, () => {
