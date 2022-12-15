@@ -10,11 +10,6 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use('/user',UserRouter)
-// readdirSync("./routes").map((r) => app.use("/", require("./routes/" + r)));
-
-
-
-
 
 const PORT = process.env.PORT 
 app.listen(PORT, () => {
