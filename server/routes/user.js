@@ -5,7 +5,7 @@ const { authUser } = require("../middlwares/auth");
 const router = express.Router();
 
 router.post("/register", register);
-router.post("/activate" ,authUser,activateAccount)
+router.post("/activate" ,authUser,)
 router.post("/login",login)
 router.post("/sendVerification", authUser, sendVerification);
 router.post("/findUser", findUser);

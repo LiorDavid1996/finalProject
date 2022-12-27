@@ -117,11 +117,10 @@ exports.login = async (req, res) => {
     const user = await User.findOne({ email });
 
     if (!user) {
-      console.log("ldldl");
-
+      
       return res
         .status(400)
-        .json({ massage: "the email address is not connected to an account " });
+        .json({ message: "the email address is not connected to an account " });
     }
     const check = await bcrypt.compare(password, user.password);
     if (!check) {

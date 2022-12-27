@@ -46,7 +46,7 @@ exports.sendVerificationEmail = (email, name, url) => {
         
         return reject({message:"an error has occurred"})
     };
-    return reject({massage:"Email Sent successfully"})
+    return reject({message:"Email Sent successfully"})
     
 });
 
@@ -84,7 +84,7 @@ exports.sendResetCode = (email, name, code) => {
         
         return reject({message:"an error has occurred"})
     };
-    return reject({massage:"Email Sent successfully"})
+    return reject({message:"Email Sent successfully"})
     
 });
 };

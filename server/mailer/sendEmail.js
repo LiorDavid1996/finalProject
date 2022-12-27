@@ -24,7 +24,7 @@ const sendEmail = (userEmail) => {
                 
                 return reject({message:"an error has occurred"})
             };
-            return reject({massage:"Email Sent successfully"})
+            return reject({message:"Email Sent successfully"})
         } )
     })
 }

@@ -130,6 +130,14 @@ const userSchema = mongoose.Schema(
         },
       },
     ],
+    favorites: [
+      {
+        user: {
+          type: ObjectId,
+          ref: "babysitters",
+        },
+      },
+    ],
   },
   {
     timestamps: true,

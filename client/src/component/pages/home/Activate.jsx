@@ -41,14 +41,14 @@ export default function Activate() {
         payload: true,
       });
 
-    //   setTimeout(() => {
-    //     navigate("/");
-    //   }, 3000);
+      setTimeout(() => {
+        navigate("/");
+      }, 3000);
     } catch (error) {
       setError(error.response.data.message);
-    //   setTimeout(() => {
-    //     navigate("/");
-    //   }, 3000);
+      setTimeout(() => {
+        navigate("/");
+      }, 3000);
     }
   };
   return (
